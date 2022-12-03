@@ -1,0 +1,119 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    overflow: hidden;
+    display: flex;
+    font-family: 'Rubik', sans-serif ;
+}
+.sidebar{
+    box-sizing: border-box;
+    height: 100vh;
+    width: 40%;
+    padding: 50px 20px;
+    text-align: center;
+}
+.content{
+    box-sizing: border-box;
+    height: 100vh;
+    width: 60%;
+    padding: 50px 20px;
+    overflow-y: scroll;
+}
+.profile{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+.name{
+    font-size: 30px;
+    margin-top: 10px;
+}
+.occupation{
+    color: grey;
+}
+.details{
+    margin: 5px;
+}
+button{
+    border-radius: 50px;
+    padding: 15px;
+    margin: 5px;
+    width: 50%;
+    transition: .2s;
+}
+button:hover{
+    cursor: pointer;
+}
+
+.icon{
+    margin: 0px 5px 0px 5px;
+}
+.twitter:hover{
+    background-color: white;
+    color: rgb(111, 205, 234);
+    border: 2px solid rgb(111, 205, 234);
+}
+.insta:hover{
+    background-color: white;
+    color: #C13584;
+    border: 2px solid #C13584;
+}
+.be:hover{
+    background-color: white;
+    color: rgb(0, 0, 0);
+    border: 2px solid rgb(0, 0, 0);
+}
+.insta{
+    color: white;
+    background-color: #C13584;
+    border: 2px solid #C13584;
+}
+.be{
+    color: white;
+    background-color: rgb(0, 0, 0);
+    border: 2px solid rgb(0, 0, 0);
+}
+.twitter{
+    color: white;
+    background-color: rgb(111, 205, 234);
+    border: 2px solid rgb(111, 205, 234);
+}
+.gallery-image{
+    width: 200px;
+    height: 150px;
+    border-radius: 10px;
+    margin: 5px 5px;
+}
+
+.category{
+    display: flex;
+    flex-wrap: wrap;
+}
+.hidden{
+    display: none;
+}
+
+@media only screen 
+   and (max-width : 420px) {
+   body{
+    overflow: scroll;
+    display: block;
+   }
+   .content, .sidebar{
+    width: 100%;
+   }
+   .sidebar{
+    height: 100vh;
+   }
+   .hidden{
+    display: block;
+   }
+   .gallery-image{
+    width: 150px;
+    height: 100px;
+    border-radius: 10px;
+    margin: 5px 5px;
+}
+}
